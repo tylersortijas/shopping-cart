@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/shopping-cart/static/css/main.1c3fae76.css",
+    "main.js": "/shopping-cart/static/js/main.6a4b744c.js",
+    "static/js/787.d6fe38e8.chunk.js": "/shopping-cart/static/js/787.d6fe38e8.chunk.js",
+    "static/media/Lamborghini-cut.mp4": "/shopping-cart/static/media/Lamborghini-cut.3c2f0b5d6efa881821b7.mp4",
+    "index.html": "/shopping-cart/index.html",
+    "main.1c3fae76.css.map": "/shopping-cart/static/css/main.1c3fae76.css.map",
+    "main.6a4b744c.js.map": "/shopping-cart/static/js/main.6a4b744c.js.map",
+    "787.d6fe38e8.chunk.js.map": "/shopping-cart/static/js/787.d6fe38e8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1c3fae76.css",
+    "static/js/main.6a4b744c.js"
+  ]
+}
