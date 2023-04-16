@@ -261,3 +261,7 @@ video {
   gap: 10px;
   margin-top: 20px;
 }
+
+.cart-exit-button {
+  cursor: pointer;
+}

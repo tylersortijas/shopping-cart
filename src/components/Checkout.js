@@ -16,7 +16,7 @@ function Checkout(props) {
     <div className="checkout-container">
       <div className="checkout-header">
       <h2>Cart Items {cartItems.length}</h2>  
-      <span onClick={() => {setCartClicked(false)}}>X</span>
+      <span onClick={() => {setCartClicked(false)}} className="cart-exit-button">X</span>
       </div>
       <div>{cartItems.length === 0 && <div>Cart is Empty</div>}</div>
       {cartItems.map((item) => (
