@@ -1,0 +1,263 @@
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: Roboto, Helvetica Neue, Arial;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+/* Header Section */
+
+.nav-container {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  width: 100%;
+  background-color: #181818;
+  height: 95px;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 60px;
+}
+
+.nav-container-left {
+  display: flex;
+  gap: 60px;
+}
+
+.nav-container-left img {
+  height: 62px;
+  width: 60px;
+}
+
+.nav-links {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+/* HomePage Section */
+
+video {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.title-text {
+  color: #ffff;
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+  position: absolute;
+  top: 70%;
+  left: 5%;
+  animation: home-anim 1.5s ease-out;
+}
+
+.title-text h2 {
+  font-size: 2rem;
+  letter-spacing: 1.5px;
+}
+
+.title-text h1 {
+  font-size: 6.5rem;
+}
+
+@keyframes home-anim {
+  20% {
+    opacity: 0;
+    transform: translateX(-200%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+/* Shop Section */
+
+.breadcrumb {
+  position: absolute;
+  z-index: 1;
+  top: 153px;
+  right: 1710px;
+  background-color: #181818;
+  width: fit-content;
+  visibility: visible;
+  text-transform: uppercase;
+  padding: 5px 30px 5px 65px;
+  color: white;
+  animation: fadeIn ease-in 1.5s forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.breadcrumb ul {
+  display: flex;
+  gap: 10px;
+  font-size: .8rem;
+}
+
+.model-shop-breadcrumb {
+  font-weight: bold;
+}
+
+.breadcrumb li {
+  list-style-type: none;
+}
+
+.cart-container {
+  cursor: pointer;
+  position: fixed;
+  background-color: white;
+  top: 24px;
+  right: 145px;
+  border-radius: 3px;
+  padding: 10px;
+  animation: 2s forwards slideLeft;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  gap: 10px;
+}
+
+.cart-length {
+  font-size: .9rem;
+}
+
+.shop-background-image {
+  z-index: -1;
+  position: absolute;
+  top: -50px;
+  width: auto;
+}
+
+.shop-title {
+  z-index: 1;
+  color: #ffff;
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+  position: absolute;
+  top: 422px;
+  left: 138px;
+  animation: slide-in-anim 1.5s ease-out;
+  overflow: hidden;
+}
+
+@keyframes slide-in-anim {
+  20% {
+    opacity: 0;
+    transform: translateX(-200%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+.shop-title h2 {
+  font-size: 2rem;
+  letter-spacing: 1.5px;
+}
+
+.shop-title h1 {
+  font-size: 6.5rem;
+}
+
+.car-container {
+  display: flex;
+  position: relative;
+  top: 1035px;
+  left: -189px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.card-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.card-container img {
+  width: 1500px;
+  height: 1000px;
+  object-fit: cover;
+}
+
+.car-information {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Checkout Section */
+
+.checkout-container {
+  color: gray;
+  z-index: 3;
+  background: white none repeat scroll 0% 0%;
+  border-radius: 10px;
+  position: fixed;
+  width: 50%;
+  top: 250px;
+  left: 50%;
+  margin: 5% 0 0 -25%;
+  padding: 15px 15px;
+  animation: slideUp 1.5s forwards;
+}
+
+@keyframes slideUp {
+  from {
+    top: 1000px;
+  }
+
+  to {
+    top: 250px;
+  }
+}
+
+.checkout-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.cart-content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
