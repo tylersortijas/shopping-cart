@@ -4,7 +4,7 @@
 # Website Preview:
 ![ezgif shopping-cart](https://user-images.githubusercontent.com/96886636/232336748-aa126ca4-b4e5-4603-b737-c9ff3eb7957a.gif)
 
-First React website using Route.
+First React website using Routes. Main goal wasn't necessarily visually, but to get a working shopping cart system. Mission Accomplished!
 
 # Features Include:
 - Functional Shopping cart.
